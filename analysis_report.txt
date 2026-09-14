@@ -1,0 +1,68 @@
+=== DATA CLEANING ===
+Raw rows: 18695
+Removed 171 exact duplicate rows
+Filled 371 missing unit_price values with category median
+Flagged 15 price outliers (|z| > 3 within category), removing them
+Clean rows: 18509
+
+=== OVERALL KPIs ===
+Total revenue: $9,419,813.94
+Total units sold: 55,401
+Average transaction value: $508.93
+
+=== REVENUE BY STORE ===
+store
+Central   1,954,349.23
+West      1,890,332.83
+North     1,864,864.96
+South     1,856,793.03
+East      1,853,473.89
+
+=== REVENUE BY CATEGORY ===
+category
+Electronics     6,049,374.90
+Home & Garden   1,739,468.79
+Clothing          730,293.63
+Toys              534,705.79
+Groceries         365,970.83
+
+=== MONTH-OVER-MONTH GROWTH (%) ===
+date
+2023-01-31      NaN
+2023-02-28     2.33
+2023-03-31    12.39
+2023-04-30    -7.30
+2023-05-31    14.26
+2023-06-30   -12.66
+2023-07-31    21.09
+2023-08-31   -12.40
+2023-09-30    21.17
+2023-10-31   -15.49
+2023-11-30    -0.84
+2023-12-31    20.74
+2024-01-31   -19.46
+2024-02-29     4.92
+2024-03-31     2.63
+2024-04-30    -1.53
+2024-05-31    -3.32
+2024-06-30    -0.86
+2024-07-31    -1.80
+2024-08-31     3.72
+2024-09-30     2.55
+2024-10-31     0.95
+2024-11-30    -2.69
+2024-12-31    27.89
+Freq: ME
+
+=== STORE x CATEGORY REVENUE PIVOT ===
+category   Clothing  Electronics  Groceries  Home & Garden       Toys
+store                                                                
+Central  141,979.12 1,256,979.15  73,301.86     371,616.28 110,472.82
+East     147,773.30 1,162,876.56  75,941.25     360,229.92 106,652.85
+North    140,927.91 1,224,270.98  70,701.27     325,237.97 103,726.83
+South    154,229.04 1,199,779.33  73,855.03     323,874.10 105,055.53
+West     145,384.26 1,205,468.88  72,171.42     358,510.51 108,797.76
+
+Best store/category combo: Central - Electronics ($1,256,979.15)
+
+Saved chart panel -> dashboard.png
